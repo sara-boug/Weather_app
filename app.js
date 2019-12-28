@@ -7,7 +7,7 @@ geocode(address,(error,data)=>{
   console.log(error);
 }else{
 weather_forcast(data, (error, data) =>{
-  if(error){
+  if(!error){
 console.log(error);
 }else {
    console.log(data);

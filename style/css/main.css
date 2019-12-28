@@ -11,8 +11,6 @@ margin: 0;
   background-size: cover;
   background-blend-mode:darken;
   filter: contrast(120%);
-
-
 }
 *{
  font-family: 'Bai Jamjuree';}
@@ -92,8 +90,8 @@ img#overall_situation_icon{
   position: absolute;
  top: 19%;
 right: 5%;
-height: 250px;
-width: 250px;
+height: 190px;
+width: 190px;
 
 }
 h2.hour{
@@ -119,10 +117,10 @@ display: flex;
  align-items:center;
  text-align: center;
         }
- .weather div {
-  height: 100%;
+.weather div {
+height: 100%;
  width: 12.5%;
-   text-align: center;
+  text-align: center;
      }
 
      .weather div:hover {
@@ -131,19 +129,43 @@ display: flex;
 
      }
      .weather div *{
-       margin-left: auto;
+      margin-left: auto;
      margin-right: auto;
      }
 .weather div h2 {
-   color:white;
+  color:white;
   font-size:20px;
   height: 10%;
   width: 100%;
-font-weight: lighter;
+  font-weight: lighter;
 
   }
 .weather div img{
   height:40px;
-width:40px;
+  width:40px;
 
    }
+ /* loading spinner */
+
+ .spinner  {
+    border:10px solid rgb(242, 242, 242,0);
+    background-color:rgb(115, 49, 25,0.5);
+    height:90px;
+    width:90px;
+    border-radius:100%;
+    animation:spin1 1s linear infinite;
+    border-right-color:rgb(36, 36, 38,1);
+    border-top-color:rgb(36, 36, 38,1);
+    border-bottom-color:rgb(36, 36, 38,1);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:30%;
+    visibility: hidden;
+  }
+ @keyframes spin1 {
+    0% { transform: rotate(0deg);}
+    33% {transform: rotate(120deg);}
+    66% {  transform: rotate(240deg);}
+    100%{  transform: rotate(360deg);}
+    
+    }
