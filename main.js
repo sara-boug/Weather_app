@@ -8,12 +8,10 @@ var weather=require("./utils/Weather_forcast.js");
 var app=express();
 var static= path.join(__dirname+"/style");
 var viewPath= path.join(__dirname+'/templates/views');
-var partialsPath=path.join(__dirname + "/templates/partials");
 
 app.set("view engine","hbs");
 app.set("views", viewPath);
 app.use("/style",express.static(static));
-hbs.registerPartials(partialsPath);
 
 
 app.get("/" , (req,res) => {
@@ -55,6 +53,7 @@ app.get("/weather", (req,res)=> {
     });
 }
     });
+
 app.listen(3000,()=>{
 console.log("listeing to the port 3000");
 });

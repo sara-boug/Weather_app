@@ -1,4 +1,4 @@
-var geocode=require("./utils/geocode.js");
+ar geocode=require("./utils/geocode.js");
 var weather_forcast=require("./utils/Weather_forcast.js");
 var address=process.argv[2];
 

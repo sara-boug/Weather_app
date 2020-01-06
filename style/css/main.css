@@ -1,153 +1,168 @@
 body ,html{
   height: 100%;
-margin: 0;
- }
+  margin: 0;
+}
 .background{
 
-  background-image: url("../images/sample22.jpg");
+   background-image: url("../images/sample22.jpg");
   height: 100%;
-   background-position: center;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode:darken;
   filter: contrast(120%);
 }
+.icons_source  {
+  position:fixed;
+font-size: 10px;
+color:#4a3f3f;
+left:90%;
+bottom:2%;:
+}
+.icons_source * {
+color:#4a3f3f;
+}
+
 *{
- font-family: 'Bai Jamjuree';}
+  font-family: 'Bai Jamjuree';}
 
-.container {
-position: fixed;
-top: 50%;
-left: 50%;
-height: 99%;
-width:60%;
- transform: translate(-50%,-50%);
- background: rgba(89, 54, 46, 0.2);
+  .container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 99%;
+    width:60%;
+    transform: translate(-50%,-50%);
+    background: rgba(89, 54, 46, 0.2);
   }
-.top , .bottom , .weather{
-  position: absolute;
-width: 100%;
-border: solid 1px #59362e;
-background-color: rgba(36, 36, 38,0.6);
-}
-.top{
-top: 0;
-height: 20%;
-align-items: center;
-
-}
- input{
-height:60%;
-width: 80%;
-position: absolute;
-top:40%;
-left:50%;
-transform: translate(-50%,-50%);
-border-radius: 7px;
-border: 2px solid #59362e;
-background-color: rgba(36, 36, 38,0.8);
-font-size: 20px;
-text-align: center;
-color:gray;
-font-weight: lighter;
- font-family: 'Bai Jamjuree';
+  .top , .bottom , .weather{
+    position: absolute;
+    width: 100%;
+    border: solid 1px #59362e;
+    background-color: rgba(36, 36, 38,0.6);
+  }
+  .top{
+    top: 0;
+    height: 15%;
+    align-items: center;
 
   }
- .top i {
-   position: absolute;
-   top:25%;
-   right:12%;
-   color: #59362e;
-   font-size: 40px;
-    }
+  input{
+    height:60%;
+    width: 80%;
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 7px;
+    border: 2px solid #59362e;
+    background-color: rgba(36, 36, 38,0.8);
+    font-size: 20px;
+    text-align: center;
+    color:gray;
+    font-weight: lighter;
+    font-family: 'Bai Jamjuree';
 
-   .top i:hover {
-     cursor: pointer;
-     font-size: 44px;
+  }
+  .top i {
+    position: absolute;
+    top:20%;
+    right:12%;
+    color: #59362e;
+    font-size: 35px;
+  }
+
+  .top i:hover {
+    cursor: pointer;
+    font-size: 44px;
     color: rgba(89, 54, 46,0.5);
 
-   }
+  }
 
-h1.country{
-  position: absolute;
-font-weight:bold;
-color:  #f25c05;
-top: 19%;
-left: 2%;
-font-size: 50px;
-}
+  h1.country{
+    position: absolute;
+    font-weight:bold;
+    color:  #f25c05;
+    top: 14%;
+    left: 2%;
+    font-size: 50px;
+  }
 
-h2.overall_situation , h2.hour{
-  font-size: 30px;
-  color: white;
-  position: absolute;
-  top: 35%;
-  left: 2%;
-font-weight: lighter;
-
-}
-img#overall_situation_icon{
-  position: absolute;
- top: 19%;
-right: 5%;
-height: 190px;
-width: 190px;
-
-}
-h2.hour{
-  font-size: 40px;
-
-top: 42%;
- left: 75%;
-
-font-weight: bold;
-}
-
-.bottom{
-bottom: 0;
-height: 30%;
-width: 100%;
-
-}
-.weather {
-display: flex;
- height: 60%;
- flex-wrap: nowrap;
- align-content: center;
- align-items:center;
- text-align: center;
-        }
-.weather div {
-height: 100%;
- width: 12.5%;
-  text-align: center;
-     }
-
-     .weather div:hover {
-       background-color: rgba(36, 36, 38,0.8);
-       cursor: pointer;
-
-     }
-     .weather div *{
-      margin-left: auto;
-     margin-right: auto;
-     }
-.weather div h2 {
-  color:white;
-  font-size:20px;
-  height: 10%;
-  width: 100%;
-  font-weight: lighter;
+  h2.overall_situation , h2.hour{
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 35%;
+    left: 2%;
+    font-weight: lighter;
 
   }
-.weather div img{
-  height:40px;
-  width:40px;
+  img#overall_situation_icon{
+    position: absolute;
+    top: 14%;
+    right: 5%;
+    height: 190px;
+    width: 190px;
 
-   }
- /* loading spinner */
+  }
+  h2.hour{
+    font-size: 40px;
 
- .spinner  {
+    top: 35%;
+    left: 75%;
+
+    font-weight: bold;
+  }
+
+  .bottom{
+    bottom: 0;
+    height: 45%;
+    width: 100%;
+
+  }
+
+
+  .weather {
+    position: absolute;
+    display: flex;
+    height: 30%;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items:center;
+    text-align: center;
+    bottom:0;
+  }
+  .weather div {
+    height: 100%;
+    width: 12.5%;
+    text-align: center;
+  }
+
+  .weather div:hover {
+    background-color: rgba(36, 36, 38,0.8);
+    cursor: pointer;
+
+  }
+  .weather div *{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .weather div h2 {
+    color:white;
+    font-size:20px;
+    height: 10%;
+    width: 100%;
+    font-weight: lighter;
+
+  }
+  .weather div img{
+    height:40px;
+    width:40px;
+
+  }
+  /* loading spinner while exctracting data*/
+
+  .spinner  {
     border:10px solid rgb(242, 242, 242,0);
     background-color:rgb(115, 49, 25,0.5);
     height:90px;
@@ -162,10 +177,42 @@ height: 100%;
     margin-top:30%;
     visibility: hidden;
   }
- @keyframes spin1 {
+  @keyframes spin1 {
     0% { transform: rotate(0deg);}
     33% {transform: rotate(120deg);}
     66% {  transform: rotate(240deg);}
     100%{  transform: rotate(360deg);}
-    
-    }
+
+  }
+  /* this part is about styling the line graph and the tool tip */
+  .axis line{
+    stroke: #96969c;
+  }
+
+  .axis path{
+    stroke: #96969c;
+  }
+
+  .axis text{
+    fill: #96969c;
+    margin: 7px;
+  }
+  svg{
+    position: absolute;
+    left: auto;
+    top: auto;
+  }
+
+  .tooltip{
+    position: absolute;
+    border:1px solid #96969c;
+    background-color: #0D0C0C;
+    color:#96969c;
+    font-size:15px;
+    opacity: 0;
+    border-radius: 5px;
+    padding:4px;
+  }
+  circle:hover{
+    cursor: pointer;
+  }
