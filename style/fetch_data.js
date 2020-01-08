@@ -14,7 +14,7 @@ $(document).ready(()=>{
 });
 
 var fetching=(location)=> {
-  fetch("http://localhost:3000/weather?address="+location.toString()).then((response)=> {
+  fetch("/weather?address="+location.toString()).then((response)=> {
     response.json().then((data) => {
       $(".spinner").css({"visibility": "hidden"});
 

@@ -3,7 +3,7 @@ var express=require("express");
 var hbs=require("hbs");
 var geocode= require("./utils/geocode");
 var weather=require("./utils/Weather_forcast.js");
-
+var port = process.env.PORT || 3000; // to make it eligible for deployment
 
 var app=express();
 var static= path.join(__dirname+"/style");
@@ -54,6 +54,6 @@ app.get("/weather", (req,res)=> {
 }
     });
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
 console.log("listeing to the port 3000");
 });
